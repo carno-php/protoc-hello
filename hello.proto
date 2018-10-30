@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package carno.tests.hello;
+
+message Payload {
+    string data = 1;
+}
+
+service Hello {
+    rpc world(Payload) returns (Payload);
+}
